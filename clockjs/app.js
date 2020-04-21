@@ -11,8 +11,8 @@ function getDate(){
   		console.log(min);
         console.log(mindegree); 
         const hour=now.getHours()
-  		const hourdegree=((hour/60)*360)+90; /* we rotate initail to 90*/
-  		document.querySelector('.min-hand').style.transform="rotate(" + hourdegree+ "deg)";
+  		const hourdegree=((min/12)*360)+90; /* we rotate initail to 90*/
+  		document.querySelector('.hour-hand').style.transform="rotate(" + hourdegree+ "deg)";
   		console.log(hour);
                 console.log(hourdegree); 
 
